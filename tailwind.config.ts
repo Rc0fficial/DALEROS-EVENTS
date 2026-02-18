@@ -9,8 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        gold: "#D4A017",
+        "gold-dark": "#B8880F",
+        "gold-light": "#E8B830",
+        dark: "#0A0A0A",
+        "dark-card": "#111111",
+        "light-bg": "#F9F9F9",
+      },
+      fontFamily: {
+        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
     },
   },
