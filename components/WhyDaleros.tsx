@@ -23,16 +23,16 @@ const features = [
 
 export default function WhyDaleros() {
   return (
-    <section id="about" className="bg-light-bg py-20 sm:py-28">
+    <section id="about" className="bg-[#0F0F0F] py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-16">
-          <p className="text-xs uppercase tracking-[0.2em] text-gold mb-4 font-medium">
+          <p className="text-xs uppercase tracking-[0.2em] text-gold/60 mb-4 font-medium">
             Why Us
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-dark leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
             Why Leaders Choose{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-dark">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light">
               DALEROS EVENTS
             </span>
           </h2>
@@ -43,15 +43,15 @@ export default function WhyDaleros() {
           {features.map((feature, i) => (
             <div
               key={i}
-              className="group relative bg-white rounded-2xl p-8 sm:p-10 border border-black/5 hover:border-gold/20 hover:shadow-xl hover:shadow-gold/5 transition-all duration-300"
+              className="group relative bg-[#161616] rounded-2xl p-8 sm:p-10 border border-white/[0.06] hover:border-gold/20 hover:bg-[#1a1a1a] transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors duration-300">
+              <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center mb-6 group-hover:bg-gold/15 transition-colors duration-300">
                 <feature.icon size={24} className="text-gold" />
               </div>
-              <h3 className="text-xl font-bold text-dark mb-3">
+              <h3 className="text-xl font-bold text-white mb-3">
                 {feature.title}
               </h3>
-              <p className="text-dark/60 leading-relaxed text-sm">
+              <p className="text-white/45 leading-relaxed text-sm">
                 {feature.description}
               </p>
             </div>

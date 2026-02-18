@@ -4,11 +4,11 @@ export default function UpcomingEvent() {
   return (
     <section id="events" className="bg-dark py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <p className="text-xs uppercase tracking-[0.2em] text-gold/60 mb-4 font-medium">
+        <p className="text-xs uppercase tracking-[0.2em] text-gold/60 mb-6 font-medium">
           Next Event
         </p>
 
-        <div className="relative border border-white/5 rounded-2xl bg-dark-card/50 p-8 sm:p-12 overflow-hidden">
+        <div className="relative border border-white/[0.06] rounded-2xl bg-[#111111] p-8 sm:p-12 overflow-hidden">
           {/* Gold left accent */}
           <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-gold via-gold to-gold-dark rounded-l-2xl" />
 
@@ -20,13 +20,13 @@ export default function UpcomingEvent() {
                 <span className="inline-block">🇧🇪🇨🇦</span>
               </h2>
 
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-white/60">
-                <div className="flex items-center gap-2">
-                  <CalendarDays size={16} className="text-gold/70" />
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-white/50">
+                <div className="flex items-center gap-2.5">
+                  <CalendarDays size={16} className="text-gold/60" />
                   <span className="text-sm">Wednesday, February 25, 2026</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <MapPin size={16} className="text-gold/70" />
+                <div className="flex items-center gap-2.5">
+                  <MapPin size={16} className="text-gold/60" />
                   <span className="text-sm">
                     Eurostars Montgomery, Brussels
                   </span>
@@ -35,7 +35,7 @@ export default function UpcomingEvent() {
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
               <a
                 href="#apply"
                 className="px-8 py-3 bg-gold text-dark font-semibold rounded-full hover:bg-gold-light hover:shadow-lg hover:shadow-gold/20 transition-all duration-200 text-sm tracking-wide text-center"
@@ -44,7 +44,7 @@ export default function UpcomingEvent() {
               </a>
               <a
                 href="#sponsor"
-                className="px-8 py-3 border border-gold/40 text-gold font-semibold rounded-full hover:bg-gold/10 hover:border-gold transition-all duration-200 text-sm tracking-wide text-center"
+                className="px-8 py-3 border border-gold/30 text-gold font-semibold rounded-full hover:bg-gold/10 hover:border-gold/50 transition-all duration-200 text-sm tracking-wide text-center"
               >
                 Sponsor This Event
               </a>
